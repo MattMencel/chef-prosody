@@ -90,7 +90,7 @@ default['ldap']['server'] = nil
 default['ldap']['users_root'] = nil
 default['ldap']['rootdn'] = nil
 default['ldap']['password'] = nil
-default['ldap'['filter'] = nil
+default['ldap']['filter'] = nil
 
 # Rest of the -subj values are defaulted to your vhost
 default['ssl']['country'] = 'NL'
