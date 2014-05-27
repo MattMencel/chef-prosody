@@ -32,8 +32,8 @@ end
 
 template ::File.join(node['prosody']['conf_d_dir'], "auth_ldap.cfg.lua") do
   mode 0644
-  variables(
-    :ldap_server => search(:node, "recipes:openldap\\:\\:users && domain:#{node['domain']}").first
-  )
+#  variables(
+#    :ldap_server => search(:node, "recipes:openldap\\:\\:users && domain:#{node['domain']}").first
+#  )
   notifies :restart, "service[prosody]"
 end
