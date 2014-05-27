@@ -85,6 +85,13 @@ default['prosody']['modules_enabled'] = %w( roster saslauth tls dialback disco
                                             private vcard version uptime time
                                             ping pep register admin_adhoc posix)
 
+# OPTIONAL LDAP AUTH ATTRIBUTES
+default['ldap']['server'] = nil
+default['ldap']['users_root'] = nil
+default['ldap']['rootdn'] = nil
+default['ldap']['password'] = nil
+default['ldap'['filter'] = nil
+
 # Rest of the -subj values are defaulted to your vhost
 default['ssl']['country'] = 'NL'
 default['ssl']['state'] = 'NH'
