@@ -86,11 +86,13 @@ default['prosody']['modules_enabled'] = %w( roster saslauth tls dialback disco
                                             ping pep register admin_adhoc posix)
 
 # OPTIONAL LDAP AUTH ATTRIBUTES
-default['ldap']['server'] = nil
-default['ldap']['users_root'] = nil
-default['ldap']['rootdn'] = nil
-default['ldap']['password'] = nil
-default['ldap']['filter'] = nil
+default['ldap']['server'] = 'localhost'
+default['ldap']['base'] = 'dc=example,dc=com'
+default['ldap']['rootdn'] = '' # default for anonymous bind
+default['ldap']['password'] = ''
+default['ldap']['filter'] = 'objectClass=posixAccount'
+default['ldap']['scope'] = 'onelevel' # onelevel, base, or subtree
+default['ldap']['tls'] = 'false'
 
 # Rest of the -subj values are defaulted to your vhost
 default['ssl']['country'] = 'NL'
