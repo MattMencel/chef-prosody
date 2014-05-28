@@ -90,7 +90,7 @@ default['ldap']['server'] = 'localhost'
 default['ldap']['base'] = 'dc=example,dc=com'
 default['ldap']['rootdn'] = '' # default for anonymous bind
 default['ldap']['password'] = ''
-default['ldap']['filter'] = 'objectClass=posixAccount'
+default['ldap']['filter'] = '(objectClass=posixAccount)'
 default['ldap']['scope'] = 'onelevel' # onelevel, base, or subtree
 default['ldap']['tls'] = 'false'
 
