@@ -1,7 +1,7 @@
 ldap_server   = "<%= node[:ldap][:server] %>";
 ldap_base     = "<%= node[:ldap][:base] %>";
-ldap_rootdn   = "<%= node[:ldap][:rootdn] %>"; -- optional
-ldap_password = "<%= node[:ldap][:password] %>"; -- optional
-ldap_filter   = "<%= node[:ldap][:filter] %>"; -- optional
-ldap_scope    = "<%= node[:ldap][:scope] %>"; -- optional
-ldap_tls      = "<%= node[:ldap][:tls] %>"; -- optional
+ldap_rootdn   = "<%= node[:ldap][:rootdn] %>";
+ldap_password = "<%= node[:ldap][:password] %>";
+ldap_filter   = "<%= node[:ldap][:filter] %>";
+ldap_scope    = "<%= node[:ldap][:scope] %>";
+ldap_tls      = <%= node[:ldap][:tls] %>;
